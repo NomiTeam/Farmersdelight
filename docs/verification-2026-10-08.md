@@ -46,3 +46,26 @@ FD 的配方按钮改为下一 tick 切换视图；FD/CAB 接受的编辑同步�
 构建日志、JUnit 汇总和后续 CE 符号检查保存在仓库外 `C:/Users/HuiDu_OwO/.codex/tmp/fd-container-fix-20261008/`。参考 CE 26.9.2 源码，编译基线仍是 26.9.1。未启动 Paper/Folia 服务端；红石、真实 InventoryMoveItemEvent/保护插件组合、世界卸载/重启与双玩家操作仍须实机验证。
 
 CE 符号审计：对最终 FD/CAB JAR 检查 CE 26.8.2、26.9、26.9.1，三版均为 missing classes = 0、missing members = 0、abstract gaps = 0。使用 Gradle 缓存中的三个对应 Maven 制品显式传入检查器；这不等同于启动三版服务端，也未声称验证了 CE 26.9.2 正式发行 JAR。
+
+
+## CE 经验与外部物品来源接入验证
+
+FD 在容器修复提交 cc40be2 上完成接入。先执行 `gradlew clean build --console=plain`，最后的来源 ID/失败隔离调整后执行 `gradlew build apiJar --console=plain`，均成功。五个附属串行 build；VD core 执行 `gradlew build --rerun-tasks --console=plain`，三项 JavaExec 断言通过。测试数量从最终 XML 重新汇总：
+
+| 模块 | suites | tests | failures / errors / skipped |
+| --- | ---: | ---: | --- |
+| FarmersDelight | 168 | 887 | 0 / 0 / 0 |
+| BarbequesDelight | 6 | 25 | 0 / 0 / 0 |
+| BrewinAndChewin | 19 | 99 | 0 / 0 / 0 |
+| CrabbersDelight | 16 | 72 | 0 / 0 / 0 |
+| EndsDelight | 3 | 11 | 0 / 0 / 0 |
+| FDAddonTemplate | 2 | 3 | 0 / 0 / 0 |
+| 合计 | 214 | 1097 | 0 / 0 / 0 |
+
+新增 18 个测试，包括 CE provider 的真实基数、固定量/倍率、模式选择、AuraSkills 优先级与 raw 路径、缺失和异常 provider 隔离、非有限数、厨锅成功/失败取餐及并发台账只领取一次，以及外部物品的大小写/多冒号 ID、同材质不同身份、clone、重载失效、旧 MMOItems 类型中的下划线、编辑器身份字符串往返。ItemSource/CE Player 使用受控替身；真实 NBT 编解码及第三方 API 仍须服务器验证。
+
+MMOItems 构造反射已移除，其反射预算条目一并删除；没有增加独立桥依赖、FD 服务查找预算或全限定类调用。五个 VD 原有用户文件 SHA256 均与首次审查一致，未修改或提交这些文件。
+
+最终 `python tools/run_all_checks.py --quiet` 为 10/10。Wiki 的 112 份受跟踪 Markdown 相对链接检查 0 断链。对最终 FD 运行 JAR 与 API JAR 检查 CE 26.8.2、26.9、26.9.1 Maven 制品，三版均无 missing classes/members 或 abstract gaps。无 Paper/Folia 实机、负载或第三方插件组合验证，未构建 VD NMS/launcher/UAAPI。
+
+产物：`build/libs/farmersdelight-1.0.3.jar`、`build/libs/farmersdelight-plugin-1.0.3-api.jar`。原始构建、符号审计、JUnit 汇总和 JAR SHA256 位于仓库外 `C:/Users/HuiDu_OwO/.codex/tmp/ce-leveler-review-20261008/final-evidence.json` 及同目录日志；未推送或部署。
