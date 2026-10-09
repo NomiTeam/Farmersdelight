@@ -26,3 +26,7 @@
 | Folia | 1.21.5 | 26.9.1 | 编辑器实机：保存一条配方后手写注释仍在原处 | 未验证 | - | 2026-10-07 |
 | Paper | 1.21.5 | 26.9.1 | 停服实机：仍有在途编辑时出现 `recipe_saves_pending` 告警 | 未验证 | - | 2026-10-07 |
 | Paper | 1.21.5 | 26.9.2 | 与 26.9.1 同口径的构建与测试 | 未验证 | - | 2026-10-07 |
+| Paper | 1.21.5 | 26.9.1 | 配方原料 null / 空图标不执行 clone，正常图标独立复制（离线） | 通过 | test:com.huidu.farmersdelight.gui.RecipeIngredientDisplayTest | 2026-10-10 |
+| Paper | 1.21.5 | 26.9.1 | 未采样不创建 Sample，holder 关闭快照，异常路径只记录一次（离线） | 通过 | test:com.huidu.farmersdelight.api.util.PerformanceProbeTest | 2026-10-10 |
+| Folia | 1.21.5 | 26.9.1 | ScheduledTask 官方取消状态与 NOOP 委托（离线，非实机调度） | 通过 | test:com.huidu.farmersdelight.util.scheduler.ScheduledTaskAdapterTest | 2026-10-10 |
+| Paper | 1.21.5 | 26.8.2～26.10 | FD 发行 912 / debug 924 项测试、清理与 14 产物 CE 符号检查 | 通过 | doc:docs/verification-debug-cleanup-2026-10-10.md | 2026-10-10 |
