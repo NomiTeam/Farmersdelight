@@ -10,6 +10,10 @@
 
 | 平台 | 版本 | CE 版本 | 验证项 | 结论 | 证据来源 | 日期 |
 | --- | --- | --- | --- | --- | --- | --- |
+| Paper | 1.21.5 | 26.9.1 | CE 展示登记、隐藏更新、保留恢复、清表重登记、旧回调隔离与关闭竞态 | 通过 | test:com.huidu.farmersdelight.visual.ProxyDisplayCullableTest | 2026-10-10 |
+| Folia | 1.21.5 | 26.9.1 | CE 剔除回调只使用 CE 网络与缓存，无 Bukkit 世界/容器读取 | 通过 | test:com.huidu.farmersdelight.visual.ProxyDisplayCullableTest | 2026-10-10 |
+| Paper | 26.2 | 26.10-SNAPSHOT | 新接入 CE 遮挡的双人客户端与真实负载 | 未验证 | manual:按工作区手工清单 T34 复测遮挡、恢复、退出和卸载 | 2026-10-10 |
+| Folia | 26.2 | 26.10-SNAPSHOT | 新接入 CE 遮挡的双人跨区客户端与真实负载 | 未验证 | manual:按工作区手工清单 T34 复测跨区玩家、遮挡和卸载 | 2026-10-10 |
 | Paper | 1.21.5 | 26.9.1 | 分片注册只从轮次末尾发布（多来源共一轮、超预算全量可匹配） | 通过 | test:com.huidu.farmersdelight.recipe.RecipeRegistrationDriverTest | 2026-10-07 |
 | Paper | 1.21.5 | 26.9.1 | 第一次装载（> 预算也）整批内联发布：启动时 manager 条数不为 0 | 通过 | test:com.huidu.farmersdelight.recipe.ColdRecipeLoadTest | 2026-10-07 |
 | Paper | 1.21.5 | 26.9.1 | 分片预算：文件 ≤ 预算时不 arm 任务、超预算按预算推进 | 通过 | test:com.huidu.farmersdelight.recipe.RecipeRegistrationBudgetTest | 2026-10-07 |
