@@ -30,3 +30,6 @@
 | Paper | 1.21.5 | 26.9.1 | 未采样不创建 Sample，holder 关闭快照，异常路径只记录一次（离线） | 通过 | test:com.huidu.farmersdelight.api.util.PerformanceProbeTest | 2026-10-10 |
 | Folia | 1.21.5 | 26.9.1 | ScheduledTask 官方取消状态与 NOOP 委托（离线，非实机调度） | 通过 | test:com.huidu.farmersdelight.util.scheduler.ScheduledTaskAdapterTest | 2026-10-10 |
 | Paper | 1.21.5 | 26.8.2～26.10 | FD 发行 912 / debug 924 项测试、清理与 14 产物 CE 符号检查 | 通过 | doc:docs/verification-debug-cleanup-2026-10-10.md | 2026-10-10 |
+| Paper | 26.2-121 | 26.10-9743c3b0 | 测试服启动、竞争重载、save-all flush 与正常停服（无玩家） | 通过 | doc:docs/verification-ce-snapshot2-2026-10-10.md | 2026-10-10 |
+| Folia | 26.2-7 | 26.10-9743c3b0 | 测试服启动、竞争重载与正常世界保存停服（无玩家） | 通过 | doc:docs/verification-ce-snapshot2-2026-10-10.md | 2026-10-10 |
+| Paper | 1.21.5 | 26.9.1 | 公开资源 lease：旧能力回退、分片持有、失败/取消释放（离线） | 通过 | test:com.huidu.farmersdelight.CraftEngineResourceLeaseTest | 2026-10-10 |
