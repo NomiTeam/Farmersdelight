@@ -10,6 +10,8 @@
 
 | 平台 | 版本 | CE 版本 | 验证项 | 结论 | 证据来源 | 日期 |
 | --- | --- | --- | --- | --- | --- | --- |
+| Paper | 26.2 (Purpur) | 26.10-SNAPSHOT | 12 类 debug 放置、功能激活、附属配方与撤销；代理管理员、真实 CE 世界 71 项断言 | 通过 | doc:docs/verification-debug-targets-2026-10-11.md | 2026-10-11 |
+| Folia | 26.2 | 26.10-SNAPSHOT | 新 debug 附属场景的真人跨区、保护和多人压力 | 未验证 | manual:复测 T28/T29，配合 spark | 2026-10-11 |
 | Paper | 1.21.5 | 26.9.1 | CE 展示登记、隐藏更新、保留恢复、清表重登记、旧回调隔离与关闭竞态 | 通过 | test:com.huidu.farmersdelight.visual.ProxyDisplayCullableTest | 2026-10-10 |
 | Folia | 1.21.5 | 26.9.1 | CE 剔除回调只使用 CE 网络与缓存，无 Bukkit 世界/容器读取 | 通过 | test:com.huidu.farmersdelight.visual.ProxyDisplayCullableTest | 2026-10-10 |
 | Paper | 26.2 | 26.10-SNAPSHOT | 新接入 CE 遮挡的双人客户端与真实负载 | 未验证 | manual:按工作区手工清单 T34 复测遮挡、恢复、退出和卸载 | 2026-10-10 |
