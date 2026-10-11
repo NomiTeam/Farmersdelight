@@ -37,3 +37,6 @@
 | Paper | 26.2-121 | 26.10-9743c3b0 | 测试服启动、竞争重载、save-all flush 与正常停服（无玩家） | 通过 | doc:docs/verification-ce-snapshot2-2026-10-10.md | 2026-10-10 |
 | Folia | 26.2-7 | 26.10-9743c3b0 | 测试服启动、竞争重载与正常世界保存停服（无玩家） | 通过 | doc:docs/verification-ce-snapshot2-2026-10-10.md | 2026-10-10 |
 | Paper | 1.21.5 | 26.9.1 | 公开资源 lease：旧能力回退、分片持有、失败/取消释放（离线） | 通过 | test:com.huidu.farmersdelight.CraftEngineResourceLeaseTest | 2026-10-10 |
+| Paper | 1.21.5 | 26.9.1 | debug 撤销 6874 条分片中查询历史不压缩索引，发行935/debug948项零失败错误跳过 | 通过 | doc:docs/verification-note-undo-2026-10-11.md | 2026-10-11 |
+| Purpur | 26.2-2622 | 26.10-9743c3b0 | FD/CAB 最新产物启动、19项便签真实物品数据断言及正常停服（无玩家） | 通过 | doc:docs/便签撤销修复与上游核对-2026-10-11.md | 2026-10-11 |
+| Paper/Folia | 1.21.5～26.2 | 26.8.2～26.10 | 私密便签编辑/克隆、真实CE含水蟹笼和大批次撤销的玩家交互 | 未验证 | manual:手工清单T06/T07/T18/T28 | 2026-10-11 |
