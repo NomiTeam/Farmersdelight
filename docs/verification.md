@@ -10,6 +10,7 @@
 
 | 平台 | 版本 | CE 版本 | 验证项 | 结论 | 证据来源 | 日期 |
 | --- | --- | --- | --- | --- | --- | --- |
+| Paper | 1.21.5 | 26.9.1 | 三饮品营养与苹果酒时长默认配置；发行935/debug947零失败错误跳过、十步与七组符号 | 通过 | doc:docs/verification-upstream-values-2026-10-13.md | 2026-10-13 |
 | Paper | 26.2 (Purpur) | 26.10-SNAPSHOT | 12 类 debug 放置、功能激活、附属配方与撤销；代理管理员、真实 CE 世界 71 项断言 | 通过 | doc:docs/verification-debug-targets-2026-10-11.md | 2026-10-11 |
 | Folia | 26.2 | 26.10-SNAPSHOT | 新 debug 附属场景的真人跨区、保护和多人压力 | 未验证 | manual:复测 T28/T29，配合 spark | 2026-10-11 |
 | Paper | 1.21.5 | 26.9.1 | CE 展示登记、隐藏更新、保留恢复、清表重登记、旧回调隔离与关闭竞态 | 通过 | test:com.huidu.farmersdelight.visual.ProxyDisplayCullableTest | 2026-10-10 |
@@ -41,4 +42,4 @@
 | Paper | 1.21.5 | 26.9.1 | 公开资源 lease：旧能力回退、分片持有、失败/取消释放（离线） | 通过 | test:com.huidu.farmersdelight.CraftEngineResourceLeaseTest | 2026-10-10 |
 | Paper | 1.21.5 | 26.9.1 | debug 撤销 6874 条分片中查询历史不压缩索引，发行935/debug948项零失败错误跳过 | 通过 | doc:docs/verification-note-undo-2026-10-11.md | 2026-10-11 |
 | Purpur | 26.2-2622 | 26.10-9743c3b0 | FD/CAB 最新产物启动、19项便签真实物品数据断言及正常停服（无玩家） | 通过 | doc:docs/便签撤销修复与上游核对-2026-10-11.md | 2026-10-11 |
-| Paper/Folia | 1.21.5～26.2 | 26.8.2～26.10 | 私密便签编辑/克隆、真实CE含水蟹笼和大批次撤销的玩家交互 | 未验证 | manual:手工清单T06/T07/T18/T28 | 2026-10-11 |
+| Paper/Folia | 1.21.5～26.2 | 26.8.2～26.10 | 便条手持原生编辑/复制及地上只读、真实CE含水蟹笼和大批次撤销的玩家交互 | 未验证 | manual:手工清单T06/T07/T18/T28 | 2026-10-13 |
