@@ -10,6 +10,9 @@
 
 | 平台 | 版本 | CE 版本 | 验证项 | 结论 | 证据来源 | 日期 |
 | --- | --- | --- | --- | --- | --- | --- |
+| Paper | 1.21.5 | 26.9.1 | 启动配置/数据包迁移契约、发行955/debug967零失败错误跳过、十步与七组符号 | 通过 | doc:docs/verification-datapack-startup-2026-10-14.md | 2026-10-14 |
+| Paper | 26.2 | 26.10-SNAPSHOT | 首次旧包迁移、注册表与原生面包溢出；9/19项实服检查 | 通过 | doc:docs/verification-datapack-startup-2026-10-14.md | 2026-10-14 |
+| Folia | 26.2 | 26.10-SNAPSHOT | 受管五包重启、旧别名退出、YAML来源和真实标签成员；156项实服检查 | 通过 | doc:docs/verification-datapack-startup-2026-10-14.md | 2026-10-14 |
 | Paper | 1.21.5 | 26.9.1 | 三饮品营养与苹果酒时长默认配置；发行935/debug947零失败错误跳过、十步与七组符号 | 通过 | doc:docs/verification-upstream-values-2026-10-13.md | 2026-10-13 |
 | Paper | 26.2 (Purpur) | 26.10-SNAPSHOT | 12 类 debug 放置、功能激活、附属配方与撤销；代理管理员、真实 CE 世界 71 项断言 | 通过 | doc:docs/verification-debug-targets-2026-10-11.md | 2026-10-11 |
 | Folia | 26.2 | 26.10-SNAPSHOT | 新 debug 附属场景的真人跨区、保护和多人压力 | 未验证 | manual:复测 T28/T29，配合 spark | 2026-10-11 |
